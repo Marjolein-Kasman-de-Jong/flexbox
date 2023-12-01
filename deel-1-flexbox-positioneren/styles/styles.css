@@ -48,3 +48,26 @@
 
 /* Opdracht 5 */
 
+.opdracht-5 div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opdracht-5 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.opdracht-5 .item-1 {
+    align-items: flex-start;
+}
+
+.opdracht-5 .item-2 {
+    align-items: center;
+}
+
+.opdracht-5 .item-3 {
+    align-items: flex-end;
+}
