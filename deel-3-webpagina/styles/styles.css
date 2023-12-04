@@ -1,1 +1,50 @@
 /*Schrijf hier jouw css*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --beige: #F2F3D9;
+    --old-rose: #C16E70;
+    --space-cadet: #151E3F;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--beige);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 40px;
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+.usps {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+article {
+    flex-basis: 280px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    height: 350px;
+    border-radius: 5px;
+    padding: 20px 1vw;
+    margin: 0 2vw;
+    background-color: var(--old-rose);
+    display: flex;
+    align-items: flex-end;
+}
