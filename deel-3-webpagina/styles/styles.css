@@ -10,7 +10,7 @@
 :root {
     --beige: #F2F3D9;
     --old-rose: #C16E70;
-    --space-cadet: #151E3F;
+    --oxford-blue: #030027;
 }
 
 body {
@@ -18,12 +18,37 @@ body {
     background-color: var(--beige);
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--oxford-blue);
+    color: white;
+    padding: 30px 40px;
+}
+
+nav {
+    flex-basis: 400px; /* Ik heb geprobeerd hier met vw te werken, maar dan zag het menu er steeds óf op een groot scherm, óf op een klein scherm niet uit zoals in het voorbeeld */
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style-type: none;
+    /*margin: 0 2vw;*/
+}
+
 .title-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    margin: 40px;
+    padding: 40px;
 }
 
 h1, h3, p {
