@@ -1,1 +1,75 @@
 /*Schrijf hier jouw css*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --beige: #F2F3D9;
+    --old-rose: #C16E70;
+    --oxford-blue: #030027;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--beige);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--oxford-blue);
+    color: white;
+    padding: 30px 40px;
+}
+
+nav {
+    flex-basis: 400px; /* Ik heb geprobeerd hier met vw te werken, maar dan zag het menu er steeds óf op een groot scherm, óf op een klein scherm niet uit zoals in het voorbeeld */
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style-type: none;
+    /*margin: 0 2vw;*/
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+.usps {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+article {
+    flex-basis: 280px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    height: 350px;
+    border-radius: 5px;
+    padding: 20px 1vw;
+    margin: 0 2vw;
+    background-color: var(--old-rose);
+    display: flex;
+    align-items: flex-end;
+}
